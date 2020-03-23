@@ -39,7 +39,7 @@ path.ls()
 In there, there's a training folder and a testing folder. As I read this in, I'm going to show some more details about pieces of the data blocks API, so that you see what's going on.  Normally with the date blocks API, we've kind of said `blah.blah.blah.blah.blah` and done it all in one cell, but let's do it in one cell at a time.
 
 ```python
-il = ImageItemList.from_folder(path, convert_mode='L')
+il = ImageList.from_folder(path, convert_mode='L')
 ```
 
 First thing you say is what kind of item list do you have. So in this case it's an item list of images. Then where are you getting the list of file names from. In this case, by looking in a folder recursively. That's where it's coming from. 
